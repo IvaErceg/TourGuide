@@ -13,13 +13,13 @@ public class FoodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("1", "lorem ipsum", R.drawable.lotrscak));
-        locations.add(new Location("2", "lorem ipsum", R.drawable.crkva));
-        locations.add(new Location("3", "lorem ipsum", R.drawable.lotrscak));
-        locations.add(new Location("4", "lorem ipsum", R.drawable.trg));
-        locations.add(new Location("5", "lorem ipsum", R.drawable.lotrscak));
-        locations.add(new Location("6", "lorem ipsum", R.drawable.kamenita));
-        locations.add(new Location("7", "lorem ipsum", R.drawable.lotrscak));
+        locations.add(new Location("Duksa Pizza", "Duknoviceva Ulica 4, Zagreb 10000, Croatia", R.drawable.duksa));
+        locations.add(new Location("Mundoaka Street Food", "Petrinjska Ulica 2, Zagreb 10000, Croatia", R.drawable.mundoaka));
+        locations.add(new Location("Zrno bio bistro", "Meduliceva Ulica 20, Zagreb 10000, Croatia", R.drawable.zrno));
+        locations.add(new Location("Vagabund", "Vlashka Ulica 90, Zagreb 10000, Croatia", R.drawable.vagabund));
+        locations.add(new Location("Rocket Burger Cafe", "Tkalchiceva Ulica 44, Zagreb 10000, Croatia", R.drawable.rocket));
+        locations.add(new Location("La Struk", "Skalinska Ulica 5, Zagreb 10000, Croatia", R.drawable.struk));
+        locations.add(new Location("Otto&Frank", "Tkalciceva 20, Zagreb 10000, Croatia", R.drawable.otto));
 
         LocationAdapter adapter = new LocationAdapter(this, locations, R.color.categoryFood);
         ListView listView = (ListView) findViewById(R.id.list);
