@@ -12,7 +12,7 @@ public class MuseumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-        //arayList of Location objects
+        //arrayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(getString(R.string.broken), getString(R.string.broken_desc), R.drawable.broken));
         locations.add(new Location(getString(R.string.illusions), getString(R.string.illu_desc), R.drawable.illusions));

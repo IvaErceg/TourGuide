@@ -12,7 +12,7 @@ public class FoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-        //arayList of Location objects
+        //arrayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(getString(R.string.duksa), getString(R.string.duksa_desc), R.drawable.duksa));
         locations.add(new Location(getString(R.string.mundoaka), getString(R.string.mundo_desc), R.drawable.mundoaka));

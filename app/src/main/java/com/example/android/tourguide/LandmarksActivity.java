@@ -12,7 +12,7 @@ public class LandmarksActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-        //arayList of Location objects
+        //arrayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(getString(R.string.upper), getString(R.string.upper_desc), R.drawable.upper));
         locations.add(new Location(getString(R.string.mirogoj), getString(R.string.mirogoj_desc), R.drawable.mirogoj));

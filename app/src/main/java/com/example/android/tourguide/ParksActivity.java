@@ -12,7 +12,7 @@ public class ParksActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-        //arayList of Location objects
+        //arrayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(getString(R.string.maksimir), getString(R.string.maks_desc), R.drawable.maksimir));
         locations.add(new Location(getString(R.string.zrinjevac), getString(R.string.zrinjevac_desc), R.drawable.zrinjevac));
