@@ -12,14 +12,15 @@ public class FoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
+        //arayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Duksa Pizza", "Duknoviceva Ulica 4, Zagreb 10000, Croatia", R.drawable.duksa));
-        locations.add(new Location("Mundoaka Street Food", "Petrinjska Ulica 2, Zagreb 10000, Croatia", R.drawable.mundoaka));
-        locations.add(new Location("Zrno bio bistro", "Meduliceva Ulica 20, Zagreb 10000, Croatia", R.drawable.zrno));
-        locations.add(new Location("Vagabund", "Vlashka Ulica 90, Zagreb 10000, Croatia", R.drawable.vagabund));
-        locations.add(new Location("Rocket Burger Cafe", "Tkalchiceva Ulica 44, Zagreb 10000, Croatia", R.drawable.rocket));
-        locations.add(new Location("La Struk", "Skalinska Ulica 5, Zagreb 10000, Croatia", R.drawable.struk));
-        locations.add(new Location("Otto&Frank", "Tkalciceva 20, Zagreb 10000, Croatia", R.drawable.otto));
+        locations.add(new Location(getString(R.string.duksa), getString(R.string.duksa_desc), R.drawable.duksa));
+        locations.add(new Location(getString(R.string.mundoaka), getString(R.string.mundo_desc), R.drawable.mundoaka));
+        locations.add(new Location(getString(R.string.zrno), getString(R.string.zrno_desc), R.drawable.zrno));
+        locations.add(new Location(getString(R.string.vagabund), getString(R.string.vagabund_desc), R.drawable.vagabund));
+        locations.add(new Location(getString(R.string.rocket), getString(R.string.rocket_desc), R.drawable.rocket));
+        locations.add(new Location(getString(R.string.struk), getString(R.string.struk_desc), R.drawable.struk));
+        locations.add(new Location(getString(R.string.otto), getString(R.string.otto_desc), R.drawable.otto));
 
         LocationAdapter adapter = new LocationAdapter(this, locations, R.color.categoryFood);
         ListView listView = (ListView) findViewById(R.id.list);

@@ -12,14 +12,15 @@ public class MuseumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
+        //arayList of Location objects
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Museum of Broken Relationships", "Cirilometodska 2, Zagreb 10000, Croatia", R.drawable.broken));
-        locations.add(new Location("Museum of Illusions", "Ilica 72, Zagreb 10000, Croatia", R.drawable.illusions));
-        locations.add(new Location("Arts and Crafts Museum", "Trg Marshala Tita 10, Zagreb 10000, Croatia", R.drawable.arts));
-        locations.add(new Location("Museum of Torture", "Ulica Pavla Radica 14 | 1st Floor, Zagreb 10000, Croatia", R.drawable.tortura));
-        locations.add(new Location("Museum of Contemporary Art", "Avenija Dubrovnik 17, Zagreb 10000, Croatia", R.drawable.contemp));
-        locations.add(new Location("Archaeological Museum", "Nikola Subic Zrinski Square 19, Zagreb 10000, Croatia", R.drawable.archeological));
-        locations.add(new Location("Croatian Museum of Naive Art", "Ulica Sv. Cirila I Metoda 3, Zagreb, Croatia", R.drawable.naive));
+        locations.add(new Location(getString(R.string.broken), getString(R.string.broken_desc), R.drawable.broken));
+        locations.add(new Location(getString(R.string.illusions), getString(R.string.illu_desc), R.drawable.illusions));
+        locations.add(new Location(getString(R.string.arts_crafts), getString(R.string.arts_desc), R.drawable.arts));
+        locations.add(new Location(getString(R.string.torture), getString(R.string.torture_desc), R.drawable.tortura));
+        locations.add(new Location(getString(R.string.cotemp_arts), getString(R.string.contemp_desc), R.drawable.contemp));
+        locations.add(new Location(getString(R.string.archeological), getString(R.string.archeol_desc), R.drawable.archeological));
+        locations.add(new Location(getString(R.string.naive), getString(R.string.naive_desc), R.drawable.naive));
 
         LocationAdapter adapter = new LocationAdapter(this, locations, R.color.categoryMuseums);
         ListView listView = (ListView) findViewById(R.id.list);
