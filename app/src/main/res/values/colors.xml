@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="categoryMuseums">#7F2B11</color>
+    <color name="categoryParks">#FF916E</color>
+    <color name="categoryLandmarks">#7F4937</color>
+    <color name="categoryFood">#CC461B</color>
+</resources>

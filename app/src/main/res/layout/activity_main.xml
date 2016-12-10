@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguide.MainActivity">
+
+    <TextView
+        android:id="@+id/landmarks"
+        style="@style/CategoryStyle"
+        android:background="@color/categoryLandmarks"
+        android:text="@string/sights_and_landmarks" />
+
+    <TextView
+        android:id="@+id/parks"
+        style="@style/CategoryStyle"
+        android:background="@color/categoryParks"
+        android:text="@string/parks_and_nature" />
+
+    <TextView
+        android:id="@+id/museums"
+        style="@style/CategoryStyle"
+        android:background="@color/categoryMuseums"
+        android:text="@string/museums" />
+
+    <TextView
+        android:id="@+id/food"
+        style="@style/CategoryStyle"
+        android:background="@color/categoryFood"
+        android:text="@string/food" />
+</LinearLayout>
