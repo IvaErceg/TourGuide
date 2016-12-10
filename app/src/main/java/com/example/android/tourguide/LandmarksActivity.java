@@ -22,7 +22,7 @@ public class LandmarksActivity extends AppCompatActivity {
         locations.add(new Location("6", "lorem ipsum", R.drawable.kamenita));
         locations.add(new Location("7", "lorem ipsum", R.drawable.lotrscak));
 
-        LocationAdapter adapter = new LocationAdapter(this, locations);
+        LocationAdapter adapter = new LocationAdapter(this, locations, R.color.categoryLandmarks);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

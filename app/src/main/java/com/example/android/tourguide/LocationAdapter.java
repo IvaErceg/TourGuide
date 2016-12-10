@@ -2,6 +2,7 @@ package com.example.android.tourguide;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +13,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class LocationAdapter extends ArrayAdapter<Location> {
-    public LocationAdapter(Activity context, ArrayList<Location> locations) {
+
+    private int mBackgroundColor;
+
+    public LocationAdapter(Activity context, ArrayList<Location> locations, int backgroundColor) {
         super(context, 0, locations);
+        mBackgroundColor = backgroundColor;
     }
 
     @NonNull
@@ -44,12 +49,10 @@ public class LocationAdapter extends ArrayAdapter<Location> {
 
         imageView.setImageResource(currentLocation.getImageResourceId());
 
-/*
+
         View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mBackgroundColor);
-        textContainer.setBackgroundColor(color);*/
-
-
+        textContainer.setBackgroundColor(color);
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
